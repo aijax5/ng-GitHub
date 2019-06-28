@@ -1,0 +1,35 @@
+.container-fluid .btn-round{
+    border-radius: 50rem;
+    border: none;
+   
+    text-transform: uppercase;
+    font-weight: 700;
+    transform: translateX(-8%);
+    span{
+        font-size: 90%;
+    }
+}
+
+.container-fluid .mbtn{
+    background-color: $col-dark;
+    color: $color-primary;
+    font-size: 1.6rem;
+    &:hover{
+        color: $col-primary-dark;
+        box-shadow: 0 .5rem 1rem rgba(#000, .15);
+    }
+    &:focus{
+        color: $color-primary;
+    }
+    &::after {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+}
+}

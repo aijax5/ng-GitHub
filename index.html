@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat:400,600,700|Ubuntu+Mono:400,700"
+        rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Github API task</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="heading">
+            Github <span>Stalker</span>
+        </div>
+
+
+        <div class="main-container">
+            <div class="container-left flex-col">
+                <div class="flex-row">
+                    <div class="form-group col-md-7">
+                        <label for="search">enter username</label>
+                        <input type="text" class="" id="search">
+                    </div>
+                    <button class="btn btn-round mbtn " onclick="userLookup()">search</button>
+                </div>
+
+                <div class="usr-cont flex-col">
+                    <img src="./loading.gif" alt="loading..." class="loading" style="display: none;">
+
+                </div>
+            </div>
+
+            <div class="container-right">
+                <div class="container-right--header">
+                    Stalk results 101
+                </div>
+                <div class="details" id="details">
+                    <!-- <div class="details-header flex-row">
+                        <img src="https://avatars1.githubusercontent.com/u/29876545?v=4" alt="sal-img"
+                            class="details-header--img">
+                        <div class="details-header--text flex-col">
+                            <div class="details-header--text__name flex-row">
+                                <span> name:</span>
+                                Mohammed Aijaz <a href="#" target="_blank" rel="noopener noreferrer"> <i>
+                                        github.com/asalaijaa</i> </a>
+
+                            </div>
+                            <div class="creation flex-row">
+                                <div class="created"> <span> created on:</span>2017-07-04 </div>
+                                <div class="updated"> <span> last update on:</span>2019-03-07 </div>
+                            </div>
+                            <div class="creation flex-row">
+                                <div class="created"> <span>COMPANY:</span>XIT Solutions</div>
+                                <div class="updated"> <span> LOCATION:</span>Hyderabad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-bio">
+                        <h3><span>bio</span></h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aut, temporibus modi beatae
+                        numquam exercitationem necessitatibus vel error a odio, provident quisquam commodi deleniti?
+                        Aperiam
+                        quas illo eaque veniam nostrum!
+                    </div>
+                    <div class="details-repos">
+                        <h3 class="flex-row"><span>repos</span>
+                            <p class="count"><span>Count:</span>5</p>
+                        </h3>
+                        <div class="repos--list flex-row">
+                            <div class="repo">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    IcecreamsAtEase </a>
+                                <div class="flex-row">
+                                    <p class="created"><span>Created on:</span>23-03-2015</p>
+                                    <p class="owner"><span>owner:</span> sallu bhai</p>
+                                </div>
+                            </div>
+                            <div class="repo">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    IcecreamsAtEase </a>
+                                <div class="flex-row">
+                                    <p class="created"><span>Created on</span> 23-03-2015</p>
+                                    <p class="owner"><span>owner</span> sallu bhai</p>
+                                </div>
+                            </div>
+                            <div class="repo">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    IcecreamsAtEase </a>
+                                <div class="flex-row">
+                                    <p class="created"><span>Created on</span> 23-03-2015</p>
+                                    <p class="owner"><span>owner</span> sallu bhai</p>
+                                </div>
+                            </div>
+                            <div class="repo">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    IcecreamsAtEase </a>
+                                <div class="flex-row">
+                                    <p class="created"><span>Created on</span> 23-03-2015</p>
+                                    <p class="owner"><span>owner</span> sallu bhai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="js/cards.js"></script>
+</body>
+
+</html>
